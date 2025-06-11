@@ -1,0 +1,1528 @@
+spell: AcidRain
+brand: Strike
+mana: 3
+damage: 3
+effects {
+Poison
+}
+traits {
+}
+;
+spell: Air Rifle
+brand: Laser
+mana: 0
+damage: 2
+effects {
+Push
+}
+traits {
+}
+;
+spell: Align
+brand: Shot
+mana: 2
+damage: 1
+effects {
+Teleport
+}
+traits {
+}
+;
+spell: Amplifier
+brand: Melee
+mana: 2
+damage: 6
+effects {
+Summon
+}
+traits {
+}
+;
+spell: Anubis
+brand: Shot
+mana: 2
+damage: 0
+effects {
+Poison
+}
+traits {
+}
+;
+spell: Apprehend
+brand: Melee
+mana: 1
+damage: 4
+effects {
+Drag
+}
+traits {
+}
+;
+spell: Armor Drop
+brand: Melee
+mana: 1
+damage: 5
+effects {
+Summon
+}
+traits {
+}
+;
+spell: Auto Slash
+brand: Step
+mana: 1
+damage: 3
+effects {
+Push
+}
+traits {
+}
+;
+spell: Back Slash
+brand: Step
+mana: 1
+damage: 4
+effects {
+Frost
+}
+traits {
+}
+;
+spell: Backstab
+brand: Strike
+mana: 1
+damage: 6
+effects {
+Pull
+}
+traits {
+}
+;
+spell: Barricade
+brand: Strike
+mana: 2
+damage: 5
+effects {
+Summon
+Frost
+}
+traits {
+}
+;
+spell: Beam Crystal
+brand: Melee
+mana: 2
+damage: 4
+effects {
+Summon
+}
+traits {
+}
+;
+spell: Blink
+brand: Shot
+mana: 1
+damage: 1
+effects {
+Teleport
+Pull
+}
+traits {
+}
+;
+spell: Bomb Toss
+brand: Missile
+mana: 2
+damage: 8
+effects {
+Summon
+}
+traits {
+}
+;
+spell: Boomerang
+brand: Shot
+mana: 2
+damage: 9
+effects {
+}
+traits {
+}
+;
+spell: Bouncing Blade
+brand: Shot
+mana: 1
+damage: 4
+effects {
+}
+traits {
+subspell
+}
+;
+spell: Bow Snipe
+brand: Shot
+mana: 3
+damage: 16
+effects {
+}
+traits {
+}
+;
+spell: Break Shot
+brand: Shot
+mana: 2
+damage: 7
+effects {
+Break
+}
+traits {
+}
+;
+spell: Breakout
+brand: Melee
+mana: 1
+damage: 5
+effects {
+}
+traits {
+}
+;
+spell: Brushfire
+brand: Strike
+mana: 1
+damage: 4
+effects {
+Flame
+}
+traits {
+}
+;
+spell: Cataclysm
+brand: Strike
+mana: 2
+damage: 6
+effects {
+Crack
+}
+traits {
+}
+;
+spell: Claw Trap
+brand: Missile
+mana: 1
+damage: 1
+effects {
+Root
+Mark
+}
+traits {
+}
+;
+spell: Cold Medicine
+brand: Shot
+mana: 0
+damage: 0
+effects {
+Heal
+Frost
+}
+traits {
+}
+;
+spell: Collapse
+brand: Strike
+mana: 3
+damage: 7
+effects {
+Pull
+}
+traits {
+}
+;
+spell: Combust
+brand: Strike
+mana: 1
+damage: 8
+effects {
+Flame
+}
+traits {
+}
+;
+spell: Compactor
+brand: Strike
+mana: 2
+damage: 10
+effects {
+Crack
+}
+traits {
+halfhit
+}
+;
+spell: Crackroots
+brand: Strike
+mana: 1
+damage: 4
+effects {
+Root
+}
+traits {
+halfhit
+}
+;
+spell: Crevasse
+brand: Strike
+mana: 4
+damage: 13
+effects {
+Summon
+Frost
+}
+traits {
+}
+;
+spell: Crossfire
+brand: Melee
+mana: 1
+damage: 7
+effects {
+}
+traits {
+multidamage
+}
+;
+spell: Crystal Rifle
+brand: Laser
+mana: 2
+damage: 4
+effects {
+Change Spell Stat
+}
+traits {
+multidamage
+}
+;
+spell: Dark Grasp
+brand: Strike
+mana: 1
+damage: 2
+effects {
+Pull
+}
+traits {
+}
+;
+spell: Diag Beam
+brand: Shot
+mana: 2
+damage: 4
+effects {
+}
+traits {
+}
+;
+spell: Dimension Sword
+brand: Melee
+mana: 2
+damage: 7
+effects {
+Teleport
+}
+traits {
+}
+;
+spell: DoubleTeam
+brand: Melee
+mana: 2
+damage: 5
+effects {
+Push
+}
+traits {
+}
+;
+spell: Downfall
+brand: Missile
+mana: 2
+damage: 3
+effects {
+Lower
+}
+traits {
+}
+;
+spell: Earthquake
+brand: Strike
+mana: 1
+damage: 7
+effects {
+Pull
+}
+traits {
+}
+;
+spell: Ember
+brand: Missile
+mana: 0
+damage: 1
+effects {
+Flame
+}
+traits {
+}
+;
+spell: Entangle
+brand: Melee
+mana: 1
+damage: 2
+effects {
+Root
+}
+traits {
+}
+;
+spell: Entrench
+brand: Utility
+mana: 0
+damage: 0
+effects {
+Shield
+Eject
+}
+traits {
+}
+;
+spell: Eruption
+brand: Missile
+mana: 1
+damage: 12
+effects {
+Crack
+Break
+}
+traits {
+}
+;
+spell: Escalation
+brand: Shot
+mana: 2
+damage: 2
+effects {
+}
+traits {
+}
+;
+spell: Fadeaway
+brand: Missile
+mana: 1
+damage: 11
+effects {
+Teleport
+Crack
+}
+traits {
+}
+;
+spell: Fire Breath
+brand: Wave
+mana: 1
+damage: 4
+effects {
+Flame
+}
+traits {
+}
+;
+spell: Firewall
+brand: Missile
+mana: 2
+damage: 1
+effects {
+Flame
+}
+traits {
+}
+;
+spell: Flamberge
+brand: Shot
+mana: 2
+damage: 4
+effects {
+Flame
+}
+traits {
+subspell
+}
+;
+spell: Flurry
+brand: Melee
+mana: 1
+damage: 2
+effects {
+Push
+}
+traits {
+}
+;
+spell: Freezer Burn
+brand: Missile
+mana: 0
+damage: 0
+effects {
+Flame
+}
+traits {
+}
+;
+spell: Frost Barrage
+brand: Shot
+mana: 2
+damage: 5
+effects {
+Frost
+}
+traits {
+}
+;
+spell: Frost Slash
+brand: Melee
+mana: 2
+damage: 5
+effects {
+Frost
+}
+traits {
+}
+;
+spell: Glitter
+brand: Strike
+mana: 2
+damage: 8
+effects {
+}
+traits {
+halfhit
+}
+;
+spell: Golf Bomb
+brand: Missile
+mana: 1
+damage: 3
+effects {
+}
+traits {
+multidamage
+}
+;
+spell: Guillotine
+brand: Strike
+mana: 2
+damage: 14
+effects {
+}
+traits {
+multidamage
+}
+;
+spell: Gun Turret
+brand: Melee
+mana: 2
+damage: 5
+effects {
+Summon
+}
+traits {
+}
+;
+spell: Gust
+brand: Shot
+mana: 0
+damage: 0
+effects {
+Push
+}
+traits {
+}
+;
+spell: Hailstone
+brand: Strike
+mana: 0
+damage: 1
+effects {
+Frost
+}
+traits {
+}
+;
+spell: Harrier
+brand: Shot
+mana: 1
+damage: 1
+effects {
+}
+traits {
+}
+;
+spell: Harvest
+brand: Melee
+mana: 2
+damage: 2
+effects {
+Mana
+}
+traits {
+}
+;
+spell: Heatseekers
+brand: Missile
+mana: 1
+damage: 0
+effects {
+Frost
+}
+traits {
+}
+;
+spell: Hydro Pump
+brand: Laser
+mana: 0
+damage: 0
+effects {
+Push
+}
+traits {
+}
+;
+spell: Hyper Beam
+brand: Laser
+mana: 3
+damage: 5
+effects {
+Drag
+}
+traits {
+}
+;
+spell: Ice Pick
+brand: Melee
+mana: 1
+damage: 5
+effects {
+Remove Status
+}
+traits {
+}
+;
+spell: Infinity Beam
+brand: Laser
+mana: 1
+damage: 4
+effects {
+Teleport
+}
+traits {
+subspell
+}
+;
+spell: Innervate
+brand: Utility
+mana: 3
+damage: 1
+effects {
+Max Mana
+}
+traits {
+}
+;
+spell: Inverter
+brand: Shot
+mana: 2
+damage: 3
+effects {
+Teleport
+}
+traits {
+}
+;
+spell: Ion Cannon
+brand: Strike
+mana: 2
+damage: 7
+effects {
+Crack
+}
+traits {
+}
+;
+spell: Jackhammer
+brand: Missile
+mana: 1
+damage: 0
+effects {
+Crack
+}
+traits {
+}
+;
+spell: Javelin
+brand: Shot
+mana: 1
+damage: 3
+effects {
+Mark
+Spear
+}
+traits {
+}
+;
+spell: Kinetic Wave
+brand: Wave
+mana: 1
+damage: 1
+effects {
+Push
+}
+traits {
+}
+;
+spell: Knife
+brand: Melee
+mana: 2
+damage: 5
+effects {
+Mark
+}
+traits {
+}
+;
+spell: Kunai
+brand: Shot
+mana: 1
+damage: 2
+effects {
+Poison
+}
+traits {
+}
+;
+spell: Laser Turret
+brand: Melee
+mana: 2
+damage: 6
+effects {
+Summon
+}
+traits {
+}
+;
+spell: Lasso
+brand: Missile
+mana: 0
+damage: 2
+effects {
+Pull
+Root
+}
+traits {
+}
+;
+spell: Last Letter
+brand: Melee
+mana: 2
+damage: 4
+effects {
+}
+traits {
+subspell
+}
+;
+spell: Lockdown
+brand: Strike
+mana: 3
+damage: 11
+effects {
+Break
+}
+traits {
+}
+;
+spell: Lux Cannon
+brand: Melee
+mana: 3
+damage: 6
+effects {
+Summon
+}
+traits {
+}
+;
+spell: Magic Claw
+brand: Strike
+mana: 2
+damage: 4
+effects {
+Mark
+}
+traits {
+}
+;
+spell: Magna Flare
+brand: Shot
+mana: 2
+damage: 1
+effects {
+}
+traits {
+}
+;
+spell: Mana Catch
+brand: Utility
+mana: 1
+damage: 0
+effects {
+Mana
+}
+traits {
+}
+;
+spell: Meteors
+brand: Strike
+mana: 2
+damage: 6
+effects {
+Summon
+Flame
+}
+traits {
+}
+;
+spell: Miasma
+brand: Strike
+mana: 2
+damage: 0
+effects {
+Poison
+}
+traits {
+}
+;
+spell: Mine
+brand: Missile
+mana: 2
+damage: 14
+effects {
+}
+traits {
+}
+;
+spell: Minigun
+brand: Shot
+mana: 2
+damage: 2
+effects {
+}
+traits {
+}
+;
+spell: Missiletow
+brand: Missile
+mana: 2
+damage: 3
+effects {
+}
+traits {
+}
+;
+spell: Monsoon
+brand: Shot
+mana: 1
+damage: 0
+effects {
+Push
+}
+traits {
+}
+;
+spell: Needler
+brand: Missile
+mana: 1
+damage: 0
+effects {
+Spear
+Mark
+}
+traits {
+}
+;
+spell: Northwind
+brand: Shot
+mana: 1
+damage: 3
+effects {
+Lift
+}
+traits {
+}
+;
+spell: Paragon
+brand: Strike
+mana: 2
+damage: 7
+effects {
+Frost
+Flame
+Poison
+}
+traits {
+}
+;
+spell: Perforate
+brand: Melee
+mana: 1
+damage: 3
+effects {
+Spear
+}
+traits {
+}
+;
+spell: Power Drain
+brand: Shot
+mana: 2
+damage: 5
+effects {
+Spellpower
+}
+traits {
+}
+;
+spell: Pull
+brand: Shot
+mana: 1
+damage: 1
+effects {
+Pull
+}
+traits {
+}
+;
+spell: Punch Cannon
+brand: Melee
+mana: 1
+damage: 3
+effects {
+}
+traits {
+subspell
+}
+;
+spell: Purgatory
+brand: Shot
+mana: 2
+damage: 2
+effects {
+Flame
+}
+traits {
+}
+;
+spell: Push Slash
+brand: Melee
+mana: 1
+damage: 5
+effects {
+Push
+}
+traits {
+}
+;
+spell: Pyroblast
+brand: Shot
+mana: 2
+damage: 2
+effects {
+Flame
+}
+traits {
+subspell
+}
+;
+spell: Quadclaws
+brand: Shot
+mana: 3
+damage: 2
+effects {
+Eject
+}
+traits {
+}
+;
+spell: Rage
+brand: Missile
+mana: 2
+damage: 8 + X
+effects {
+}
+traits {
+multidamage
+}
+;
+spell: Ragnarok
+brand: Strike
+mana: 3
+damage: 22
+effects {
+Break
+}
+traits {
+}
+;
+spell: Rake
+brand: Melee
+mana: 2
+damage: 3
+effects {
+Pull
+}
+traits {
+}
+;
+spell: Reaper
+brand: Melee
+mana: 2
+damage: 8
+effects {
+Spear
+Mark
+}
+traits {
+}
+;
+spell: Rocket
+brand: Missile
+mana: 1
+damage: 10
+effects {
+Flame
+}
+traits {
+}
+;
+spell: Rush
+brand: Melee
+mana: 1
+damage: 5
+effects {
+Drag
+Invincible
+}
+traits {
+}
+;
+spell: Sacrifire
+brand: Laser
+mana: 1
+damage: 3
+effects {
+Flame
+}
+traits {
+subspell
+}
+;
+spell: Salamander
+brand: Shot
+mana: 2
+damage: 6
+effects {
+Flame
+}
+traits {
+halfhit
+}
+;
+spell: Salvo
+brand: Shot
+mana: 3
+damage: 8
+effects {
+}
+traits {
+halfhit
+}
+;
+spell: Scatter Spear
+brand: Utility
+mana: 1
+damage: 0
+effects {
+Spear
+}
+traits {
+}
+;
+spell: Seize
+brand: Strike
+mana: 3
+damage: 8
+effects {
+Root
+}
+traits {
+halfhit
+}
+;
+spell: Sentry Turret
+brand: Melee
+mana: 2
+damage: 2
+effects {
+Summon
+}
+traits {
+}
+;
+spell: Shadow Shift
+brand: Shot
+mana: 1
+damage: 2
+effects {
+Drag
+Poison
+}
+traits {
+}
+;
+spell: Shear
+brand: Melee
+mana: 2
+damage: 4
+effects {
+Drag
+}
+traits {
+multidamage
+}
+;
+spell: Shield Throw
+brand: Shot
+mana: 2
+damage: X
+effects {
+Shield
+Push
+}
+traits {
+multidamage
+}
+;
+spell: Shotgun
+brand: Melee
+mana: 2
+damage: 7
+effects {
+Push
+}
+traits {
+}
+;
+spell: Skewer
+brand: Melee
+mana: 0
+damage: 0
+effects {
+Stun
+}
+traits {
+}
+;
+spell: Slowball
+brand: Shot
+mana: 1
+damage: 6 + X
+effects {
+}
+traits {
+multidamage
+}
+;
+spell: Snow Cone
+brand: Wave
+mana: 1
+damage: 0
+effects {
+Frost
+}
+traits {
+}
+;
+spell: Snowfall
+brand: Strike
+mana: 1
+damage: 4
+effects {
+Frost
+}
+traits {
+}
+;
+spell: Spear Catch
+brand: Utility
+mana: 0
+damage: 0
+effects {
+Spear
+}
+traits {
+}
+;
+spell: Spear Wave
+brand: Shot
+mana: 3
+damage: 4
+effects {
+Spear
+}
+traits {
+}
+;
+spell: Starfield
+brand: Missile
+mana: 1
+damage: 8
+effects {
+}
+traits {
+halfhit
+}
+;
+spell: Step Blaze
+brand: Step
+mana: 1
+damage: 4
+effects {
+Flame
+}
+traits {
+}
+;
+spell: Step Lance
+brand: Step
+mana: 2
+damage: 5
+effects {
+Push
+}
+traits {
+subspell
+}
+;
+spell: Step Reverse
+brand: Step
+mana: 1
+damage: 5
+effects {
+Poison
+}
+traits {
+}
+;
+spell: Step Slash
+brand: Step
+mana: 1
+damage: 3
+effects {
+}
+traits {
+}
+;
+spell: Stinger
+brand: Missile
+mana: 1
+damage: 1
+effects {
+Shield
+Flame
+}
+traits {
+}
+;
+spell: Strangle
+brand: Missile
+mana: 2
+damage: 4
+effects {
+Root
+}
+traits {
+}
+;
+spell: Strip Mine
+brand: Missile
+mana: 2
+damage: 5
+effects {
+}
+traits {
+}
+;
+spell: Study
+brand: Utility
+mana: 0
+damage: 0
+effects {
+Change Spell Stat
+}
+traits {
+}
+;
+spell: Swallow Spear
+brand: Utility
+mana: 1
+damage: 0
+effects {
+Spear
+Mana
+}
+traits {
+}
+;
+spell: Sweeper
+brand: Missile
+mana: 3
+damage: 8
+effects {
+}
+traits {
+halfhit
+}
+;
+spell: Tailwind
+brand: Shot
+mana: 0
+damage: 0
+effects {
+Pull
+}
+traits {
+}
+;
+spell: Tetra
+brand: Strike
+mana: 2
+damage: 4
+effects {
+Push
+}
+traits {
+}
+;
+spell: Thunder
+brand: Strike
+mana: 1
+damage: 7
+effects {
+}
+traits {
+}
+;
+spell: Toxicross
+brand: Melee
+mana: 2
+damage: 4
+effects {
+Spear
+Poison
+}
+traits {
+}
+;
+spell: Transmute
+brand: Wave
+mana: 2
+damage: 8
+effects {
+Spear
+}
+traits {
+}
+;
+spell: Tremor
+brand: Wave
+mana: 1
+damage: 7
+effects {
+Crack
+}
+traits {
+}
+;
+spell: Tri Thunder
+brand: Strike
+mana: 2
+damage: 7
+effects {
+}
+traits {
+}
+;
+spell: Triple Barrel
+brand: Shot
+mana: 2
+damage: 6
+effects {
+Push
+}
+traits {
+halfhit
+}
+;
+spell: Tsunami
+brand: Wave
+mana: 3
+damage: 3
+effects {
+Push
+}
+traits {
+}
+;
+spell: Twinferno
+brand: Strike
+mana: 3
+damage: 6
+effects {
+Flame
+}
+traits {
+}
+;
+spell: Ultrangle
+brand: Missile
+mana: 3
+damage: 44
+effects {
+}
+traits {
+}
+;
+spell: Unleash
+brand: Shot
+mana: X
+damage: 2
+effects {
+Mana
+}
+traits {
+}
+;
+spell: Venoshock
+brand: Laser
+mana: 2
+damage: 6 + X
+effects {
+Poison
+}
+traits {
+multidamage
+}
+;
+spell: Vine Pull
+brand: Missile
+mana: 1
+damage: 4
+effects {
+Pull
+}
+traits {
+subspell
+}
+;
+spell: Vivisection
+brand: Shot
+mana: 1
+damage: 4
+effects {
+}
+traits {
+}
+;
+spell: Volley
+brand: Shot
+mana: 1
+damage: 7
+effects {
+}
+traits {
+}
+;
+spell: Vortex
+brand: Missile
+mana: 2
+damage: 5
+effects {
+Drag
+}
+traits {
+}
+;
+spell: Warp Rays
+brand: Laser
+mana: 3
+damage: 7
+effects {
+Teleport
+}
+traits {
+}
+;
+spell: Whiplash
+brand: Melee
+mana: 2
+damage: 8
+effects {
+}
+traits {
+multidamage
+}
+;
+spell: Whirl
+brand: Strike
+mana: 1
+damage: 1
+effects {
+Drag
+}
+traits {
+}
+;
+spell: Wind Burst
+brand: Missile
+mana: 1
+damage: 2
+effects {
+Knockback
+}
+traits {
+}
+;
+spell: Wrecking Ball
+brand: Missile
+mana: 0
+damage: 2
+effects {
+Break
+}
+traits {
+}
+;
+spell: Zenith
+brand: Missile
+mana: 1
+damage: 12
+effects {
+}
+traits {
+}
+;

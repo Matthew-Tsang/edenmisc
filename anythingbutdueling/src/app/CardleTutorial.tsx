@@ -1,4 +1,5 @@
-import { Dialog, Paper, Typography, useTheme } from "@mui/material";
+import { Dialog, IconButton, Paper, Typography, useTheme } from "@mui/material";
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 
 type TutorialProps = {
     open: boolean,
@@ -20,17 +21,22 @@ export default function CardleTutorial(props: TutorialProps) {
             height: "80vh",
             width: "lg",
             backgroundImage: "url(/purple-circle-bg.png)",
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: "repeat",
             backgroundSize: "auto 100vh",
             backgroundPosition: "center center",
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
             verticalAlign: "top",
-            display: "block"
+            display: "inline-block"
           }}>
-          <Typography variant="h2" color="white" sx={{marginTop: "15px", textShadow: theme.shadowing.shadowOutline, fontFamily: "JosefinSans"}}>How to Play</Typography>
-          <Typography variant="h4" color="white" sx={{textShadow: theme.shadowing.shadowOutline, fontFamily: "JosefinSans"}}>Guess the spell in 5 tries!</Typography>
+          <div className={`flex justify-end`}>
+            <IconButton onClick={() => props.handleClose(false)}>
+              <CloseOutlinedIcon style={{color: "white", fontSize: "42px", stroke: "black", strokeWidth: "0.6px"}}/>
+            </IconButton>
+          </div>
+          <Typography variant="h2" color="white" sx={{marginTop: "-20px", textShadow: theme.shadowing.shadowOutline, fontFamily: "JosefinSans"}}>How to Play</Typography>
+          <Typography variant="h4" color="white" sx={{marginTop: "3px", textShadow: theme.shadowing.shadowOutline, fontFamily: "JosefinSans"}}>Guess the spell in 5 tries!</Typography>
           <Typography variant="h5" color="white" sx={{marginTop: "20px", textShadow: theme.shadowing.shadowOutline, fontFamily: "JosefinSans"}}>
             The color of each aspect of the spell will indicate how close your guess was to the spell.
           </Typography>

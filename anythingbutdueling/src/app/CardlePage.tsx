@@ -1,11 +1,10 @@
-'use client'
-
 import Image from "next/image";
 import styles from "./styles.module.css";
 import localFont from "next/font/local";
 import { Grid, Icon, IconButton, Tooltip } from "@mui/material";
 import { useState } from "react";
 import CardleTutorial from "./CardleTutorial";
+import SpellSelect from "./SpellSelect";
 
 const josefinSans = localFont({
   src: "../../public/fonts/JosefinSans-Regular.ttf",
@@ -57,26 +56,27 @@ export default function CardlePage() {
       </IconButton>
       </Tooltip>
       </div>
-      <div className={`flex flex-row justify-center items-center relative top-7`}>
-        <Grid container
-          sx={{
-            backgroundImage: "url('/in game button icon.png')",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-            width: 'calc(75vw)',
-            height: 'calc(30vh)',
-            maxWidth: '460px',
-            maxHeight: '102px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
-        >
-          <div className={`text-5xl relative top-1 ${josefinSans.className}`}>
-            Cardle
-          </div>
-      </Grid>
+        <div className={`flex flex-row justify-center items-center relative top-7`}>
+          <Grid container
+            sx={{
+              backgroundImage: "url('/in game button icon.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              width: 'calc(75vw)',
+              height: 'calc(30vh)',
+              maxWidth: '460px',
+              maxHeight: '102px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+          >
+            <div className={`text-5xl relative top-1 ${josefinSans.className}`}>
+              Cardle
+            </div>
+        </Grid>
       </div>
+      <SpellSelect></SpellSelect>
     </div>
   );
 }

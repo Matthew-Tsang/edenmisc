@@ -29,3 +29,8 @@ body {
   font-family: JosefinSans;
   src: url("../../public/fonts/JosefinSans-Regular.ttf");
 }
+
+@font-face {
+  font-family: UbuntuRegular;
+  src: url("../../public/fonts/Ubuntu-Regular.ttf");
+}

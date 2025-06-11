@@ -1,0 +1,151 @@
+AcidRain
+Air Rifle
+Align
+Amplifier
+Anubis
+Apprehend
+Armor Drop
+Auto Slash
+Back Slash
+Backstab
+Barricade
+Beam Crystal
+Blink
+Bomb Toss
+Boomerang
+Bouncing Blade
+Bow Snipe
+Break Shot
+Breakout
+Brushfire
+Cataclysm
+Claw Trap
+Cold Medicine
+Collapse
+Combust
+Compactor
+Crackroots
+Crevasse
+Crossfire
+Crystal Rifle
+Dark Grasp
+Diag Beam
+Dimension Sword
+DoubleTeam
+Downfall
+Earthquake
+Ember
+Entangle
+Entrench
+Eruption
+Escalation
+Fadeaway
+Fire Breath
+Firewall
+Flamberge
+Flurry
+Freezer Burn
+Frost Barrage
+Frost Slash
+Glitter
+Golf Bomb
+Guillotine
+Gun Turret
+Gust
+Hailstone
+Harrier
+Harvest
+Heatseekers
+Hydro Pump
+Hyper Beam
+Ice Pick
+Infinity Beam
+Innervate
+Inverter
+Ion Cannon
+Jackhammer
+Javelin
+Kinetic Wave
+Knife
+Kunai
+Laser Turret
+Lasso
+Last Letter
+Lockdown
+Lux Cannon
+Magic Claw
+Magna Flare
+Mana Catch
+Meteors
+Miasma
+Mine
+Minigun
+Missiletow
+Monsoon
+Needler
+Northwind
+Paragon
+Perforate
+Power Drain
+Pull
+Punch Cannon
+Purgatory
+Push Slash
+Pyroblast
+Quadclaws
+Rage
+Ragnarok
+Rake
+Reaper
+Rocket
+Rush
+Sacrifire
+Salamander
+Salvo
+Scatter Spear
+Seize
+Sentry Turret
+Shadow Shift
+Shear
+Shield Throw
+Shotgun
+Skewer
+Slowball
+Snow Cone
+Snowfall
+Spear Catch
+Spear Wave
+Starfield
+Step Blaze
+Step Lance
+Step Reverse
+Step Slash
+Stinger
+Strangle
+Strip Mine
+Study
+Swallow Spear
+Sweeper
+Tailwind
+Tetra
+Thunder
+Toxicross
+Transmute
+Tremor
+Tri Thunder
+Triple Barrel
+Tsunami
+Twinferno
+Ultrangle
+Unleash
+Venoshock
+Vine Pull
+Vivisection
+Volley
+Vortex
+Warp Rays
+Whiplash
+Whirl
+Wind Burst
+Wrecking Ball
+Zenith
