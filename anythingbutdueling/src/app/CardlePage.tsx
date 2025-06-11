@@ -5,6 +5,7 @@ import { Grid, Icon, IconButton, Tooltip } from "@mui/material";
 import { useState } from "react";
 import CardleTutorial from "./CardleTutorial";
 import SpellSelect from "./SpellSelect";
+import GuessCounter from "./GuessCounter";
 
 const josefinSans = localFont({
   src: "../../public/fonts/JosefinSans-Regular.ttf",
@@ -21,6 +22,11 @@ const josefinSans = localFont({
 export default function CardlePage() {
 
   const [tutorialOpen, setTutorialOpen] = useState(false);
+  const [guessCount, setGuessCount] = useState(0);
+
+  const handleGuess = () => {
+    setGuessCount(guessCount + 1);
+  }
 
   return (
     <div>
@@ -76,7 +82,10 @@ export default function CardlePage() {
             </div>
         </Grid>
       </div>
-      <SpellSelect></SpellSelect>
+      <Grid container spacing={20}>
+        <SpellSelect handleGuess={handleGuess}></SpellSelect>
+        <GuessCounter guessCount={guessCount} guessMax={5}></GuessCounter>
+      </Grid>
     </div>
   );
 }
