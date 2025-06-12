@@ -1,13 +1,14 @@
 import { Box, Grid, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
+import { Guess } from "./PseuoAPI/Gameplay";
 
-export default function SpellCard(props: any) {
+export default function SpellCard(props: { correctSpell: string; currentSpell: Guess }) {
     // const cardObject = hanasFunction(props.correctSpell, props.currentSpell);
     const theme = useTheme();
 
     let spellFontSize = "36px";
-    if (props.currentSpell === "Bouncing Blade") spellFontSize = "34px";
-    if (props.currentSpell === "Dimension Sword") spellFontSize = "30px";
+    if (props.currentSpell.name === "Bouncing Blade") spellFontSize = "34px";
+    if (props.currentSpell.name === "Dimension Sword") spellFontSize = "30px";
 
     return (
         <Grid container>
@@ -27,11 +28,12 @@ export default function SpellCard(props: any) {
                     <Typography
                         sx={{
                             fontSize: "60px",
-                            color: "rgb(0, 255, 68)",
+                            // color: "rgb(0, 255, 68)",
+                            color: `${props.currentSpell.mana.hex}`,
                             fontFamily: "JosefinSans",
                         }}
                     >
-                        0
+                        {props.currentSpell.mana.string}
                     </Typography>
                 </Box>
                 <Box
@@ -50,7 +52,7 @@ export default function SpellCard(props: any) {
                             fontFamily: "JosefinSans",
                         }}
                     >
-                        {props.currentSpell}
+                        {props.currentSpell.name}
                     </Typography>
                 </Box>
                 <Image src="/spellcardshadow.png" alt="current spell" width={446} height={625} />
@@ -58,11 +60,11 @@ export default function SpellCard(props: any) {
                     <Typography
                         sx={{
                             fontSize: "50px",
-                            color: "rgb(255, 255, 255)",
+                            color: `${props.currentSpell.damage.hex}`,
                             fontFamily: "JosefinSans",
                         }}
                     >
-                        12
+                        {props.currentSpell.damage.string}
                     </Typography>
                 </Box>
                 <Typography
@@ -71,11 +73,11 @@ export default function SpellCard(props: any) {
                         fontSize: "48px",
                         top: "710px",
                         left: "55px",
-                        color: "yellow",
+                        color: `${props.currentSpell.brand.hex}`,
                         fontFamily: "UbuntuRegular",
                     }}
                 >
-                    Missile
+                    {props.currentSpell.brand.string}
                 </Typography>
             </Grid>
             <div className="grid gap-0">
@@ -96,9 +98,10 @@ export default function SpellCard(props: any) {
                             sx={{
                                 fontSize: "30px",
                                 fontFamily: "UbuntuBold",
+                                color: `${props.currentSpell.effects[0].hex}`,
                             }}
                         >
-                            Frost
+                            {props.currentSpell.effects[0].string}
                         </Typography>
                     </Box>
                     <Image src="/effectbox.png" alt="current spell" width={290} height={64} />
@@ -120,10 +123,10 @@ export default function SpellCard(props: any) {
                             sx={{
                                 fontSize: "30px",
                                 fontFamily: "UbuntuBold",
-                                color: "yellow",
+                                color: `${props.currentSpell.effects[1].hex}`,
                             }}
                         >
-                            Change Spell Stat
+                            {props.currentSpell.effects[1].string}
                         </Typography>
                     </Box>
                     <Image src="/effectbox.png" alt="current spell" width={290} height={64} />
@@ -145,10 +148,10 @@ export default function SpellCard(props: any) {
                             sx={{
                                 fontSize: "30px",
                                 fontFamily: "UbuntuBold",
-                                color: "rgb(0, 255, 68)",
+                                color: `${props.currentSpell.effects[2].hex}`,
                             }}
                         >
-                            Poison
+                            {props.currentSpell.effects[2].string}
                         </Typography>
                     </Box>
                     <Image src="/effectbox.png" alt="current spell" width={290} height={64} />
@@ -169,8 +172,8 @@ export default function SpellCard(props: any) {
                         verticalAlign: "middle",
                     }}
                 >
-                    <Typography sx={{ fontSize: "25px", marginTop: "20%" }}>{"has half hit"}</Typography>
-                    <Typography sx={{ fontSize: "25px", marginTop: "10%", color: "rgb(0, 255, 68)" }}>has multiple damages</Typography>
+                    <Typography sx={{ fontSize: "25px", marginTop: "20%", color: `${props.currentSpell.traits[0].hex}` }}>{props.currentSpell.traits[0].string}</Typography>
+                    <Typography sx={{ fontSize: "25px", marginTop: "10%", color: `${props.currentSpell.traits[1].hex}` }}>{props.currentSpell.traits[1].string}</Typography>
                 </Box>
             </div>
         </Grid>

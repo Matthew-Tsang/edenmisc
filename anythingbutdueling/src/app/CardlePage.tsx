@@ -2,11 +2,12 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 import localFont from "next/font/local";
 import { Grid, Icon, IconButton, Tooltip } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CardleTutorial from "./CardleTutorial";
 import SpellSelect from "./SpellSelect";
 import GuessCounter from "./GuessCounter";
 import SpellCard from "./SpellCard";
+import { DailySpell, Guess, CompareSpell } from "./PseuoAPI/Gameplay";
 
 const josefinSans = localFont({
     src: "../../public/fonts/JosefinSans-Regular.ttf",
@@ -23,11 +24,16 @@ const josefinSans = localFont({
 export default function CardlePage() {
     const [tutorialOpen, setTutorialOpen] = useState(false);
     const [guessCount, setGuessCount] = useState(0);
-    const [currentSpell, setCurrentSpell] = useState("");
+    const [dailySpell, setDailySpell] = useState("");
+    const [currentSpell, setCurrentSpell] = useState(new Guess());
+
+    useEffect(() => {
+        setDailySpell(DailySpell());
+    }, []);
 
     const handleGuess = (spell: string) => {
         setGuessCount(guessCount + 1);
-        setCurrentSpell(spell);
+        setCurrentSpell(CompareSpell(dailySpell, spell));
     };
 
     return (
@@ -81,7 +87,7 @@ export default function CardlePage() {
                 </Grid>
             </div>
             <Grid container spacing={10} sx={{ marginTop: "70px" }}>
-                <SpellCard correctSpell="Tri Thunder" currentSpell={currentSpell}></SpellCard>
+                <SpellCard correctSpell={dailySpell} currentSpell={currentSpell}></SpellCard>
                 <SpellSelect handleGuess={handleGuess}></SpellSelect>
                 <GuessCounter guessCount={guessCount} guessMax={5}></GuessCounter>
             </Grid>
