@@ -1,6 +1,6 @@
 const Answer = {
-    exact: "#78DB68",
-    close: "#FDCB58",
+    exact: "#7DE86A",
+    close: "#FCC44B",
     far: "#FFFFFF", // #E6E7E8
 };
 const maxEffects = 3;

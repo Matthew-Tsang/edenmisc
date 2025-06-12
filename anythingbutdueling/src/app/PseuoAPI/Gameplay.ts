@@ -1,10 +1,11 @@
 import CARDS from "./Cardle.json";
 import pseudo from "./Pseudo.json";
 import "./Dictionary";
-import { Answer, maxEffects, maxTraits, similarBrands, similarEffects } from "./Dictionary";
+import { Answer, maxEffects, maxTraits, similarBrands, similarEffects, traitReadable } from "./Dictionary";
 
 type Cardtridge = {
     nameString: string;
+    spellID: string;
     brand: string;
     manaString: string;
     variableMana: boolean;
@@ -17,6 +18,7 @@ type Cardtridge = {
 
 const EmptyCardtridge = {
     nameString: "",
+    spellID: "Empty",
     brand: "",
     manaString: "",
     variableMana: true,
@@ -34,6 +36,7 @@ class StringColor {
 
 export class Guess {
     name: string;
+    spellID: string;
     brand: StringColor = new StringColor();
     damage: StringColor = new StringColor();
     mana: StringColor = new StringColor();
@@ -52,6 +55,7 @@ export class Guess {
         }
 
         this.name = c.nameString;
+        this.spellID = c.spellID;
         this.brand.string = c.brand;
         this.damage.string = c.damageString;
         this.mana.string = c.manaString;
@@ -60,7 +64,7 @@ export class Guess {
             this.effects[i].string = c.effects[i];
         }
         for (let i = 0; i < c.traits.length && i < maxTraits; i++) {
-            this.traits[i].string = c.traits[i];
+            this.traits[i].string = traitReadable[c.traits[i] as keyof typeof traitReadable];
         }
     }
 }
@@ -85,7 +89,7 @@ export function DailySpell(): string {
 function FindSpell(s: string): Cardtridge | null {
     for (let i = 0; i < CARDS.length; i++) {
         let c = CARDS[i];
-        if (c.nameString.toLowerCase() == s.toLocaleLowerCase()) {
+        if (c.nameString.toLowerCase() == s.toLowerCase()) {
             return c;
         }
     }
@@ -114,15 +118,15 @@ export function CompareSpell(correct: string, guess: string): Guess {
         // give partial if at least 1 effect is correct
 
         guessObj.fullEffectsCol = Answer.exact;
-        guessObj.effects.forEach((e) => {
-            e.hex = GuessEffect(correctCard, e.string);
+        for (let i: number = 0; i < guessedCard.effects.length && i < guessObj.effects.length; i++) {
+            guessObj.effects[i].hex = GuessEffect(correctCard, guessedCard.effects[i]);
 
-            if (e.hex != Answer.exact) {
+            if (guessObj.effects[i].hex != Answer.exact) {
                 guessObj.fullEffectsCol = Answer.far;
             } else {
                 correctEffects++;
             }
-        });
+        }
 
         if (guessObj.fullEffectsCol == Answer.far && correctEffects > 0) {
             guessObj.fullEffectsCol = Answer.close;
@@ -135,15 +139,15 @@ export function CompareSpell(correct: string, guess: string): Guess {
         guessObj.fullTraitsCol = correctCard.traits.length == 0 ? Answer.exact : Answer.far;
     } else {
         guessObj.fullTraitsCol = Answer.exact;
-        guessObj.traits.forEach((t) => {
-            t.hex = correctCard.traits.includes(t.string) ? Answer.exact : Answer.far;
+        for (let i: number = 0; i < guessedCard.traits.length && i < guessObj.traits.length; i++) {
+            guessObj.traits[i].hex = correctCard.traits.includes(guessedCard.traits[i]) ? Answer.exact : Answer.far;
 
-            if (t.hex != Answer.exact) {
+            if (guessObj.traits[i].hex != Answer.exact) {
                 guessObj.fullTraitsCol = Answer.far;
             } else {
                 correctTraits++;
             }
-        });
+        }
 
         if (guessObj.fullTraitsCol == Answer.far && correctTraits > 0) {
             guessObj.fullTraitsCol = Answer.close;
@@ -182,13 +186,16 @@ function GuessBrand(c: Cardtridge, g: Cardtridge): string {
 }
 function GuessEffect(c: Cardtridge, e: string): string {
     let sharePool = false;
-    for (let pool in similarEffects) {
-        if (pool.includes(e)) {
-            // find pool with effect from guess
+    for (let i: number = 0; i < similarEffects.length; i++) {
+        let pool = similarEffects[i];
 
-            for (let effect in c.effects) {
+        // find pool with effect from guess
+        if (pool.includes(e)) {
+            // if any effect from correct share the pool
+            for (let j: number = 0; j < c.effects.length; j++) {
+                let effect = c.effects[j];
+
                 if (pool.includes(effect)) {
-                    // if any effect from correct share the pool
                     sharePool = true;
                     break;
                 }

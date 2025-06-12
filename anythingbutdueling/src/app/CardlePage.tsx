@@ -67,7 +67,7 @@ export default function CardlePage() {
                     </IconButton>
                 </Tooltip>
             </div>
-            <div className={`flex flex-row justify-center items-center relative top-7`}>
+            <div className={`flex flex-row justify-center items-center relative top-11`}>
                 <Grid
                     container
                     sx={{
@@ -76,20 +76,28 @@ export default function CardlePage() {
                         backgroundSize: "contain",
                         width: "calc(75vw)",
                         height: "calc(30vh)",
-                        maxWidth: "460px",
+                        maxWidth: "370px",
                         maxHeight: "102px",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
                     }}
                 >
-                    <div className={`text-5xl relative top-1 ${josefinSans.className}`}>Cardle</div>
+                    <div className={`text-4xl absolute top-6 ${josefinSans.className}`}>Cardle</div>
                 </Grid>
             </div>
-            <Grid container spacing={10} sx={{ marginTop: "70px" }}>
-                <SpellCard correctSpell={dailySpell} currentSpell={currentSpell}></SpellCard>
-                <SpellSelect handleGuess={handleGuess}></SpellSelect>
-                <GuessCounter guessCount={guessCount} guessMax={5}></GuessCounter>
+            <Grid container spacing={0} sx={{ marginTop: "70px" }}>
+                <Grid size={4.78} sx={{}}>
+                    <SpellCard correctSpell={dailySpell} currentSpell={currentSpell}></SpellCard>
+                </Grid>
+                <Grid size={3} sx={{}}></Grid>
+                <Grid size={2.62} sx={{ marginTop: "-125px" }}>
+                    <GuessCounter guessCount={guessCount} guessMax={5}></GuessCounter>
+                    <Grid sx={{ marginTop: "51px" }}>
+                        <SpellSelect handleGuess={handleGuess}></SpellSelect>
+                    </Grid>
+                </Grid>
+                <Grid size={1} sx={{}}></Grid>
             </Grid>
         </div>
     );

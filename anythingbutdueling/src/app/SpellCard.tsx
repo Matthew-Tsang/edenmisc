@@ -55,6 +55,18 @@ export default function SpellCard(props: { correctSpell: string; currentSpell: G
                         {props.currentSpell.name}
                     </Typography>
                 </Box>
+                <Box
+                    sx={{
+                        position: "absolute",
+                        top: "500px",
+                        left: "25px",
+                        width: "300px",
+                        height: "300px",
+                        opacity: "15%",
+                    }}
+                >
+                    <Image src="/brands/melee.png" alt="current spell" width={450} height={450} />
+                </Box>
                 <Image src="/spellcardshadow.png" alt="current spell" width={446} height={625} />
                 <Box sx={{ position: "absolute", top: "715px", left: "315px", display: "flex", justifyContent: "center", textAlign: "center", width: "100px", height: "100px" }}>
                     <Typography
