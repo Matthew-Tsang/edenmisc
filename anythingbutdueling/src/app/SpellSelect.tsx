@@ -1,11 +1,12 @@
-import { Autocomplete, FilterOptionsState, Grid, TextField } from "@mui/material";
+import { Autocomplete, FilterOptionsState, Grid, Icon, IconButton, TextField } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { SPELL_LIST, SPELL_LIST_LOWER } from "./Spells";
-import { matchSorter } from 'match-sorter';
+import { matchSorter } from "match-sorter";
 import { SetStateAction, useState } from "react";
-import ClearIcon from '@mui/icons-material/Clear';
-import parse from 'autosuggest-highlight/parse';
-import match from 'autosuggest-highlight/match';
+import ClearIcon from "@mui/icons-material/Clear";
+import parse from "autosuggest-highlight/parse";
+import match from "autosuggest-highlight/match";
+import Image from "next/image";
 
 const StyledAutocomplete = styled(Autocomplete)({
     "& .MuiInputLabel-outlined:not(.MuiInputLabel-shrink)": {
@@ -19,17 +20,17 @@ const StyledAutocomplete = styled(Autocomplete)({
         overflow: "visible",
         fontSize: "45px",
         marginTop: "-18px",
-        opacity: "0.7"
+        opacity: "0.7",
     },
     ".MuiInputLabel-outlined": {
         color: "white",
         fontSize: "32px",
-        marginTop: "-10px"
+        marginTop: "-10px",
     },
     "&.Mui-focused .MuiInputLabel-outlined": {
         color: "white",
         fontSize: "32px",
-        marginTop: "-10px"
+        marginTop: "-10px",
     },
     "& .MuiAutocomplete-inputRoot": {
         color: "white",
@@ -39,20 +40,20 @@ const StyledAutocomplete = styled(Autocomplete)({
         fontSize: "32px",
         '&[class*="MuiOutlinedInput-root"] .MuiAutocomplete-input:first-of-type': {
             // Default left padding is 6px
-            paddingLeft: 6
+            paddingLeft: 6,
         },
         "& .MuiOutlinedInput-notchedOutline": {
             borderColor: "white",
             borderWidth: "4.5px",
-            borderRadius: "14px"
+            borderRadius: "14px",
         },
         "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: "white"
+            borderColor: "white",
         },
         "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
             borderColor: "rgb(254, 50, 102)",
             borderWidth: "4.5px",
-            borderRadius: "14px"
+            borderRadius: "14px",
         },
         ".MuiAutocomplete-clearIndicator": {
             color: "white",
@@ -61,27 +62,31 @@ const StyledAutocomplete = styled(Autocomplete)({
             display: "none",
         },
         ".MuiAutocomplete-popupIndicator": {
-            color: "white"
+            color: "white",
         },
         "& .MuiAutocomplete-noOptions": {
-            display: "none"
+            display: "none",
         },
         "& .MuiAutocomplete-paper": {
-            borderWidth: "20px"
+            borderWidth: "20px",
         },
-    }
+    },
 });
 
-
-export default function SpellSelect(props: { handleGuess: () => void; }) {
-
+export default function SpellSelect(props: { handleGuess: (name: string) => void }) {
     const [value, setValue] = useState("");
     const spells = SPELL_LIST;
 
     const handleChange = (_e: Event, val: SetStateAction<string>) => setValue(val);
+    const handleSubmit = () => {
+        if (SPELL_LIST_LOWER.includes(value.toLowerCase())) {
+            props.handleGuess(value);
+            setValue("");
+        }
+    };
 
     return (
-        <Grid>
+        <Grid container spacing={1}>
             {/*@ts-expect-error for some reason it's not expecting an argument even tho it takes it*/}
             <StyledAutocomplete<string>
                 disablePortal
@@ -90,37 +95,28 @@ export default function SpellSelect(props: { handleGuess: () => void; }) {
                 onInputChange={handleChange}
                 sx={{
                     width: "320px",
-                    '& + .MuiAutocomplete-popper .MuiAutocomplete-option:hover': {
+                    "& + .MuiAutocomplete-popper .MuiAutocomplete-option:hover": {
                         backgroundColor: "rgba(254, 50, 102, 0.5)",
                     },
                     '& + .MuiAutocomplete-option[aria-selected="true"]': {
                         backgroundColor: "rgba(254, 50, 102, 0.5)",
                     },
-                    '& + .MuiAutocomplete-popper': {
+                    "& + .MuiAutocomplete-popper": {
                         backgroundColor: "rgba(0,0,0,0.2)",
                         borderRadius: "14px",
                         borderTopRightRadius: "0px",
                         borderTopLeftRadius: "0px",
-                        boxShadow: "0px 0px 7px 0px rgba(0,0,0,0.6)"
-                    }
+                        boxShadow: "0px 0px 7px 0px rgba(0,0,0,0.6)",
+                    },
                 }}
                 filterOptions={(options: string[], state: FilterOptionsState<string>) => {
                     if (state.inputValue.length > 0) {
                         return matchSorter(options, state.inputValue).slice(0, 10);
-                    }
-                    else
-                        return [];
+                    } else return [];
                 }}
                 onKeyDown={(event) => {
-                    if (event.key === 'Enter') {
-                        if (SPELL_LIST_LOWER.includes(value.toLowerCase())) {
-                            console.log(value);
-                            props.handleGuess()
-                            setValue("");
-                        }
-                        else {
-
-                        }
+                    if (event.key === "Enter") {
+                        handleSubmit();
                     }
                 }}
                 clearOnEscape
@@ -129,7 +125,9 @@ export default function SpellSelect(props: { handleGuess: () => void; }) {
                 renderInput={(params) => <TextField {...params} label="Enter a spell" variant="outlined" />}
                 renderOption={(props, option: string, { inputValue }) => {
                     const { key, ...optionProps } = props;
-                    const matches = match(option, inputValue, { insideWords: true });
+                    const matches = match(option, inputValue, {
+                        insideWords: true,
+                    });
                     const parts = parse(option, matches);
 
                     return (
@@ -156,10 +154,9 @@ export default function SpellSelect(props: { handleGuess: () => void; }) {
                             backgroundColor: "rgba(254, 50, 102, 0)",
                             marginTop: "-12px",
                         },
-                        elevation: 0
+                        elevation: 0,
                     },
-                    listbox:
-                    {
+                    listbox: {
                         sx: {
                             borderRadius: "14px",
                             borderTopRightRadius: "0px",
@@ -168,11 +165,34 @@ export default function SpellSelect(props: { handleGuess: () => void; }) {
                             boxSizing: "border-box",
                             paddingTop: "15px",
                             borderWidth: "4.5px",
-                            borderColor: "rgb(254, 50, 102)"
+                            borderColor: "rgb(254, 50, 102)",
                         },
-                    }
+                    },
                 }}
             />
+            <IconButton
+                sx={{
+                    marginTop: "-2px",
+                    height: "75px",
+                    width: "75px",
+                }}
+                onClick={() => {
+                    handleSubmit();
+                }}
+            >
+                <Icon
+                    sx={{
+                        fontSize: 40,
+                        borderWidth: "4.5px",
+                        borderColor: "white",
+                        borderRadius: "14px",
+                        height: "75px",
+                        width: "75px",
+                    }}
+                >
+                    <Image src="/arrowUp.png" alt="submit" width={80} height={80} />
+                </Icon>
+            </IconButton>
         </Grid>
-    )
+    );
 }
