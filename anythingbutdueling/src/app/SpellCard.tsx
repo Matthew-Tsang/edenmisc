@@ -11,12 +11,12 @@ export default function SpellCard(props: { correctSpell: string; currentSpell: G
     if (props.currentSpell.name === "Dimension Sword") spellFontSize = "30px";
 
     return (
-        <Grid container>
-            <Grid sx={{ marginTop: "-25px" }}>
+        <Grid container position="relative">
+            <Grid sx={{ marginTop: "-25px", position: "relative" }}>
                 <Box
                     sx={{
                         position: "absolute",
-                        top: "230px",
+                        top: "33px",
                         left: "25px",
                         width: "100px",
                         height: "100px",
@@ -39,7 +39,7 @@ export default function SpellCard(props: { correctSpell: string; currentSpell: G
                 <Box
                     sx={{
                         position: "absolute",
-                        top: "250px",
+                        top: "53px",
                         left: "165px",
                         width: "270px",
                         height: "40px",
@@ -58,17 +58,39 @@ export default function SpellCard(props: { correctSpell: string; currentSpell: G
                 <Box
                     sx={{
                         position: "absolute",
-                        top: "500px",
-                        left: "25px",
-                        width: "300px",
-                        height: "300px",
+                        top: "86px",
+                        left: "104px",
+                        width: "240px",
+                        height: "240px",
+                    }}
+                >
+                    <Image src={`/Spells/${props.currentSpell.spellID}.png`} alt={`${props.currentSpell.name} spell icon`} width={256} height={256} />
+                </Box>
+                <Box
+                    sx={{
+                        position: "absolute",
+                        top: "0px",
+                        left: "0px",
+                        width: "446px",
+                        height: "625px",
                         opacity: "15%",
                     }}
                 >
-                    <Image src="/brands/melee.png" alt="current spell" width={450} height={450} />
+                    <Image src={`/brands/${props.currentSpell.brand.string}.png`} alt="current spell" width={446} height={625} />
+                </Box>
+                <Box
+                    sx={{
+                        position: "absolute",
+                        top: "0px",
+                        left: "0px",
+                        width: "446px",
+                        height: "625px",
+                    }}
+                >
+                    <Image src={`/border-spell.png`} alt="current spell" width={446} height={625} />
                 </Box>
                 <Image src="/spellcardshadow.png" alt="current spell" width={446} height={625} />
-                <Box sx={{ position: "absolute", top: "715px", left: "315px", display: "flex", justifyContent: "center", textAlign: "center", width: "100px", height: "100px" }}>
+                <Box sx={{ position: "absolute", top: "495px", left: "315px", display: "flex", justifyContent: "center", textAlign: "center", width: "100px", height: "100px" }}>
                     <Typography
                         sx={{
                             fontSize: "50px",
@@ -83,13 +105,13 @@ export default function SpellCard(props: { correctSpell: string; currentSpell: G
                     sx={{
                         position: "absolute",
                         fontSize: "48px",
-                        top: "710px",
+                        top: "490px",
                         left: "55px",
                         color: `${props.currentSpell.brand.hex}`,
                         fontFamily: "UbuntuRegular",
                     }}
                 >
-                    {props.currentSpell.brand.string}
+                    {props.currentSpell.brand.string === "Default" ? "" : props.currentSpell.brand.string}
                 </Typography>
             </Grid>
             <div className="grid gap-0">
@@ -97,8 +119,8 @@ export default function SpellCard(props: { correctSpell: string; currentSpell: G
                     <Box
                         sx={{
                             position: "absolute",
-                            top: "275px",
-                            left: "452px",
+                            top: "55px",
+                            left: "448px",
                             width: "280px",
                             height: "55px",
                             display: "flex",
@@ -122,8 +144,8 @@ export default function SpellCard(props: { correctSpell: string; currentSpell: G
                     <Box
                         sx={{
                             position: "absolute",
-                            top: "395px",
-                            left: "452px",
+                            top: "175px",
+                            left: "448px",
                             width: "280px",
                             height: "55px",
                             display: "flex",
@@ -147,8 +169,8 @@ export default function SpellCard(props: { correctSpell: string; currentSpell: G
                     <Box
                         sx={{
                             position: "absolute",
-                            top: "518px",
-                            left: "452px",
+                            top: "298px",
+                            left: "448px",
                             width: "280px",
                             height: "55px",
                             display: "flex",

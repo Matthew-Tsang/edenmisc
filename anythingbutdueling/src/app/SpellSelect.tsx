@@ -47,7 +47,7 @@ const StyledAutocomplete = styled(Autocomplete)({
             borderWidth: "4.5px",
             borderRadius: "14px",
         },
-        "&:hover .MuiOutlinedInput-notchedOutline": {
+        "&:hover:not(.Mui-focused):not(.Mui-disabled) .MuiOutlinedInput-notchedOutline": {
             borderColor: "white",
         },
         "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
@@ -73,9 +73,10 @@ const StyledAutocomplete = styled(Autocomplete)({
     },
 });
 
-export default function SpellSelect(props: { handleGuess: (name: string) => void }) {
+export default function SpellSelect(props: { disabled: boolean; handleGuess: (name: string) => void }) {
     const [value, setValue] = useState("");
     const spells = SPELL_LIST;
+    const borderColor = props.disabled ? "rgba(0,0,0,0.3)" : "white";
 
     const handleChange = (_e: Event, val: SetStateAction<string>) => setValue(val);
     const handleSubmit = () => {
@@ -89,6 +90,7 @@ export default function SpellSelect(props: { handleGuess: (name: string) => void
         <Grid container spacing={1}>
             {/*@ts-expect-error for some reason it's not expecting an argument even tho it takes it*/}
             <StyledAutocomplete<string>
+                disabled={props.disabled}
                 disablePortal
                 options={spells}
                 value={value}
@@ -179,12 +181,13 @@ export default function SpellSelect(props: { handleGuess: (name: string) => void
                 onClick={() => {
                     handleSubmit();
                 }}
+                disabled={props.disabled}
             >
                 <Icon
                     sx={{
                         fontSize: 40,
                         borderWidth: "4.5px",
-                        borderColor: "white",
+                        borderColor: `${borderColor}`,
                         borderRadius: "14px",
                         height: "75px",
                         width: "75px",

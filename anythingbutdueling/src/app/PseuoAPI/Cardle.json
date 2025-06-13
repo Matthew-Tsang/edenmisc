@@ -1,6 +1,7 @@
 [
 	{
 		"nameString": "AcidRain",
+		"spellID": "AcidRain",
 		"brand": "Strike",
 		"manaString": "3",
 		"variableMana": false,
@@ -12,6 +13,7 @@
 	},
 	{
 		"nameString": "Air Rifle",
+		"spellID": "AirRifle",
 		"brand": "Laser",
 		"manaString": "0",
 		"variableMana": false,
@@ -23,6 +25,7 @@
 	},
 	{
 		"nameString": "Align",
+		"spellID": "Align",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -34,6 +37,7 @@
 	},
 	{
 		"nameString": "Amplifier",
+		"spellID": "SummonAmplifier",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -45,6 +49,7 @@
 	},
 	{
 		"nameString": "Anubis",
+		"spellID": "Anubis",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -56,6 +61,7 @@
 	},
 	{
 		"nameString": "Apprehend",
+		"spellID": "Apprehend",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -67,6 +73,7 @@
 	},
 	{
 		"nameString": "Armor Drop",
+		"spellID": "SummonArmor",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -78,6 +85,7 @@
 	},
 	{
 		"nameString": "Auto Slash",
+		"spellID": "AutoSlash",
 		"brand": "Step",
 		"manaString": "1",
 		"variableMana": false,
@@ -89,6 +97,7 @@
 	},
 	{
 		"nameString": "Back Slash",
+		"spellID": "BackSlash",
 		"brand": "Step",
 		"manaString": "1",
 		"variableMana": false,
@@ -100,6 +109,7 @@
 	},
 	{
 		"nameString": "Backstab",
+		"spellID": "Backstab",
 		"brand": "Strike",
 		"manaString": "1",
 		"variableMana": false,
@@ -111,6 +121,7 @@
 	},
 	{
 		"nameString": "Barricade",
+		"spellID": "SummonBarricade",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -122,6 +133,7 @@
 	},
 	{
 		"nameString": "Beam Crystal",
+		"spellID": "SummonBeamCrystal",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -133,6 +145,7 @@
 	},
 	{
 		"nameString": "Blink",
+		"spellID": "Blink",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -144,6 +157,7 @@
 	},
 	{
 		"nameString": "Bomb Toss",
+		"spellID": "BombToss",
 		"brand": "Missile",
 		"manaString": "2",
 		"variableMana": false,
@@ -155,6 +169,7 @@
 	},
 	{
 		"nameString": "Boomerang",
+		"spellID": "Boomerang",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -166,6 +181,7 @@
 	},
 	{
 		"nameString": "Bouncing Blade",
+		"spellID": "BouncingBlade",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -177,6 +193,7 @@
 	},
 	{
 		"nameString": "Bow Snipe",
+		"spellID": "BowSnipe",
 		"brand": "Shot",
 		"manaString": "3",
 		"variableMana": false,
@@ -188,6 +205,7 @@
 	},
 	{
 		"nameString": "Break Shot",
+		"spellID": "BreakShot",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -199,6 +217,7 @@
 	},
 	{
 		"nameString": "Breakout",
+		"spellID": "Breakout",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -210,6 +229,7 @@
 	},
 	{
 		"nameString": "Brushfire",
+		"spellID": "Brushfire",
 		"brand": "Strike",
 		"manaString": "1",
 		"variableMana": false,
@@ -221,6 +241,7 @@
 	},
 	{
 		"nameString": "Cataclysm",
+		"spellID": "Cataclysm",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -232,6 +253,7 @@
 	},
 	{
 		"nameString": "Claw Trap",
+		"spellID": "ClawTrap",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -243,6 +265,7 @@
 	},
 	{
 		"nameString": "Cold Medicine",
+		"spellID": "ColdMedicine",
 		"brand": "Shot",
 		"manaString": "0",
 		"variableMana": false,
@@ -254,6 +277,7 @@
 	},
 	{
 		"nameString": "Collapse",
+		"spellID": "Collapse",
 		"brand": "Strike",
 		"manaString": "3",
 		"variableMana": false,
@@ -265,6 +289,7 @@
 	},
 	{
 		"nameString": "Combust",
+		"spellID": "Combust",
 		"brand": "Strike",
 		"manaString": "1",
 		"variableMana": false,
@@ -276,6 +301,7 @@
 	},
 	{
 		"nameString": "Compactor",
+		"spellID": "Compactor",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -287,6 +313,7 @@
 	},
 	{
 		"nameString": "Crackroots",
+		"spellID": "Crackroots",
 		"brand": "Strike",
 		"manaString": "1",
 		"variableMana": false,
@@ -298,6 +325,7 @@
 	},
 	{
 		"nameString": "Crevasse",
+		"spellID": "SummonCrevasse",
 		"brand": "Strike",
 		"manaString": "4",
 		"variableMana": false,
@@ -309,6 +337,7 @@
 	},
 	{
 		"nameString": "Crossfire",
+		"spellID": "Crossfire",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -320,6 +349,7 @@
 	},
 	{
 		"nameString": "Crystal Rifle",
+		"spellID": "CrystalRifle",
 		"brand": "Laser",
 		"manaString": "2",
 		"variableMana": false,
@@ -331,6 +361,7 @@
 	},
 	{
 		"nameString": "Dark Grasp",
+		"spellID": "DarkGrasp",
 		"brand": "Strike",
 		"manaString": "1",
 		"variableMana": false,
@@ -342,6 +373,7 @@
 	},
 	{
 		"nameString": "Diag Beam",
+		"spellID": "DiagBeam",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -353,6 +385,7 @@
 	},
 	{
 		"nameString": "Dimension Sword",
+		"spellID": "DimensionSword",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -364,6 +397,7 @@
 	},
 	{
 		"nameString": "DoubleTeam",
+		"spellID": "DoubleTeam",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -375,6 +409,7 @@
 	},
 	{
 		"nameString": "Downfall",
+		"spellID": "Downfall",
 		"brand": "Missile",
 		"manaString": "2",
 		"variableMana": false,
@@ -386,6 +421,7 @@
 	},
 	{
 		"nameString": "Earthquake",
+		"spellID": "Earthquake",
 		"brand": "Strike",
 		"manaString": "1",
 		"variableMana": false,
@@ -397,6 +433,7 @@
 	},
 	{
 		"nameString": "Ember",
+		"spellID": "Ember",
 		"brand": "Missile",
 		"manaString": "0",
 		"variableMana": false,
@@ -408,6 +445,7 @@
 	},
 	{
 		"nameString": "Entangle",
+		"spellID": "Entangle",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -419,6 +457,7 @@
 	},
 	{
 		"nameString": "Entrench",
+		"spellID": "Entrench",
 		"brand": "Utility",
 		"manaString": "0",
 		"variableMana": false,
@@ -430,6 +469,7 @@
 	},
 	{
 		"nameString": "Eruption",
+		"spellID": "Eruption",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -441,6 +481,7 @@
 	},
 	{
 		"nameString": "Escalation",
+		"spellID": "Escalation",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -452,6 +493,7 @@
 	},
 	{
 		"nameString": "Fadeaway",
+		"spellID": "Fadeaway",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -463,6 +505,7 @@
 	},
 	{
 		"nameString": "Fire Breath",
+		"spellID": "FireBreath",
 		"brand": "Wave",
 		"manaString": "1",
 		"variableMana": false,
@@ -474,6 +517,7 @@
 	},
 	{
 		"nameString": "Firewall",
+		"spellID": "Firewall",
 		"brand": "Missile",
 		"manaString": "2",
 		"variableMana": false,
@@ -485,6 +529,7 @@
 	},
 	{
 		"nameString": "Flamberge",
+		"spellID": "Flamberge",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -496,6 +541,7 @@
 	},
 	{
 		"nameString": "Flurry",
+		"spellID": "Flurry",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -507,6 +553,7 @@
 	},
 	{
 		"nameString": "Freezer Burn",
+		"spellID": "FreezerBurn",
 		"brand": "Missile",
 		"manaString": "0",
 		"variableMana": false,
@@ -518,6 +565,7 @@
 	},
 	{
 		"nameString": "Frost Barrage",
+		"spellID": "FrostBarrage",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -529,6 +577,7 @@
 	},
 	{
 		"nameString": "Frost Slash",
+		"spellID": "FrostSlash",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -540,6 +589,7 @@
 	},
 	{
 		"nameString": "Glitter",
+		"spellID": "Glitter",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -551,6 +601,7 @@
 	},
 	{
 		"nameString": "Golf Bomb",
+		"spellID": "GolfBomb",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -562,6 +613,7 @@
 	},
 	{
 		"nameString": "Guillotine",
+		"spellID": "Guillotine",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -573,6 +625,7 @@
 	},
 	{
 		"nameString": "Gun Turret",
+		"spellID": "SummonTurretGun",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -584,6 +637,7 @@
 	},
 	{
 		"nameString": "Gust",
+		"spellID": "Gust",
 		"brand": "Shot",
 		"manaString": "0",
 		"variableMana": false,
@@ -595,6 +649,7 @@
 	},
 	{
 		"nameString": "Hailstone",
+		"spellID": "Hailstone",
 		"brand": "Strike",
 		"manaString": "0",
 		"variableMana": false,
@@ -606,6 +661,7 @@
 	},
 	{
 		"nameString": "Harrier",
+		"spellID": "Harrier",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -617,6 +673,7 @@
 	},
 	{
 		"nameString": "Harvest",
+		"spellID": "Harvest",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -628,6 +685,7 @@
 	},
 	{
 		"nameString": "Heatseekers",
+		"spellID": "Heatseekers",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -639,6 +697,7 @@
 	},
 	{
 		"nameString": "Hydro Pump",
+		"spellID": "HydroPump",
 		"brand": "Laser",
 		"manaString": "0",
 		"variableMana": false,
@@ -650,6 +709,7 @@
 	},
 	{
 		"nameString": "Hyper Beam",
+		"spellID": "HyperBeam",
 		"brand": "Laser",
 		"manaString": "3",
 		"variableMana": false,
@@ -661,6 +721,7 @@
 	},
 	{
 		"nameString": "Ice Pick",
+		"spellID": "IcePick",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -672,6 +733,7 @@
 	},
 	{
 		"nameString": "Infinity Beam",
+		"spellID": "InfinityBeam",
 		"brand": "Laser",
 		"manaString": "1",
 		"variableMana": false,
@@ -683,6 +745,7 @@
 	},
 	{
 		"nameString": "Innervate",
+		"spellID": "Innervate",
 		"brand": "Utility",
 		"manaString": "3",
 		"variableMana": false,
@@ -694,6 +757,7 @@
 	},
 	{
 		"nameString": "Inverter",
+		"spellID": "Inverter",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -705,6 +769,7 @@
 	},
 	{
 		"nameString": "Ion Cannon",
+		"spellID": "IonCannon",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -716,6 +781,7 @@
 	},
 	{
 		"nameString": "Jackhammer",
+		"spellID": "Jackhammer",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -727,6 +793,7 @@
 	},
 	{
 		"nameString": "Javelin",
+		"spellID": "Javelin",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -738,6 +805,7 @@
 	},
 	{
 		"nameString": "Kinetic Wave",
+		"spellID": "KineticWave",
 		"brand": "Wave",
 		"manaString": "1",
 		"variableMana": false,
@@ -749,6 +817,7 @@
 	},
 	{
 		"nameString": "Knife",
+		"spellID": "Knife",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -760,6 +829,7 @@
 	},
 	{
 		"nameString": "Kunai",
+		"spellID": "Kunai",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -771,6 +841,7 @@
 	},
 	{
 		"nameString": "Laser Turret",
+		"spellID": "SummonTurretLaser",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -782,6 +853,7 @@
 	},
 	{
 		"nameString": "Lasso",
+		"spellID": "Lasso",
 		"brand": "Missile",
 		"manaString": "0",
 		"variableMana": false,
@@ -793,6 +865,7 @@
 	},
 	{
 		"nameString": "Last Letter",
+		"spellID": "LastLetter",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -804,6 +877,7 @@
 	},
 	{
 		"nameString": "Lockdown",
+		"spellID": "Lockdown",
 		"brand": "Strike",
 		"manaString": "3",
 		"variableMana": false,
@@ -815,6 +889,7 @@
 	},
 	{
 		"nameString": "Lux Cannon",
+		"spellID": "SummonTurretLux",
 		"brand": "Melee",
 		"manaString": "3",
 		"variableMana": false,
@@ -826,6 +901,7 @@
 	},
 	{
 		"nameString": "Magic Claw",
+		"spellID": "MagicClaw",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -837,6 +913,7 @@
 	},
 	{
 		"nameString": "Magna Flare",
+		"spellID": "MagnaFlare",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -848,6 +925,7 @@
 	},
 	{
 		"nameString": "Mana Catch",
+		"spellID": "ManaCatch",
 		"brand": "Utility",
 		"manaString": "1",
 		"variableMana": false,
@@ -859,6 +937,7 @@
 	},
 	{
 		"nameString": "Meteors",
+		"spellID": "Meteors",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -870,6 +949,7 @@
 	},
 	{
 		"nameString": "Miasma",
+		"spellID": "Miasma",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -881,6 +961,7 @@
 	},
 	{
 		"nameString": "Mine",
+		"spellID": "Mine",
 		"brand": "Missile",
 		"manaString": "2",
 		"variableMana": false,
@@ -892,6 +973,7 @@
 	},
 	{
 		"nameString": "Minigun",
+		"spellID": "Minigun",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -903,6 +985,7 @@
 	},
 	{
 		"nameString": "Missiletow",
+		"spellID": "Missiletow",
 		"brand": "Missile",
 		"manaString": "2",
 		"variableMana": false,
@@ -914,6 +997,7 @@
 	},
 	{
 		"nameString": "Monsoon",
+		"spellID": "Monsoon",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -925,6 +1009,7 @@
 	},
 	{
 		"nameString": "Needler",
+		"spellID": "Needler",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -936,6 +1021,7 @@
 	},
 	{
 		"nameString": "Northwind",
+		"spellID": "Northwind",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -947,6 +1033,7 @@
 	},
 	{
 		"nameString": "Paragon",
+		"spellID": "Paragon",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -958,6 +1045,7 @@
 	},
 	{
 		"nameString": "Perforate",
+		"spellID": "Perforate",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -969,6 +1057,7 @@
 	},
 	{
 		"nameString": "Power Drain",
+		"spellID": "PowerDrain",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -980,6 +1069,7 @@
 	},
 	{
 		"nameString": "Pull",
+		"spellID": "Pull",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -991,6 +1081,7 @@
 	},
 	{
 		"nameString": "Punch Cannon",
+		"spellID": "PunchCannon",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -1002,6 +1093,7 @@
 	},
 	{
 		"nameString": "Purgatory",
+		"spellID": "Purgatory",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -1013,6 +1105,7 @@
 	},
 	{
 		"nameString": "Push Slash",
+		"spellID": "PushSlash",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -1024,6 +1117,7 @@
 	},
 	{
 		"nameString": "Pyroblast",
+		"spellID": "Pyroblast",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -1035,6 +1129,7 @@
 	},
 	{
 		"nameString": "Quadclaws",
+		"spellID": "Quadclaws",
 		"brand": "Shot",
 		"manaString": "3",
 		"variableMana": false,
@@ -1046,6 +1141,7 @@
 	},
 	{
 		"nameString": "Rage",
+		"spellID": "Rage",
 		"brand": "Missile",
 		"manaString": "2",
 		"variableMana": false,
@@ -1057,6 +1153,7 @@
 	},
 	{
 		"nameString": "Ragnarok",
+		"spellID": "Ragnarok",
 		"brand": "Strike",
 		"manaString": "3",
 		"variableMana": false,
@@ -1068,6 +1165,7 @@
 	},
 	{
 		"nameString": "Rake",
+		"spellID": "Rake",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -1079,6 +1177,7 @@
 	},
 	{
 		"nameString": "Reaper",
+		"spellID": "Reaper",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -1090,6 +1189,7 @@
 	},
 	{
 		"nameString": "Rocket",
+		"spellID": "Rocket",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -1101,6 +1201,7 @@
 	},
 	{
 		"nameString": "Rush",
+		"spellID": "Rush",
 		"brand": "Melee",
 		"manaString": "1",
 		"variableMana": false,
@@ -1112,6 +1213,7 @@
 	},
 	{
 		"nameString": "Sacrifire",
+		"spellID": "Sacrifire",
 		"brand": "Laser",
 		"manaString": "1",
 		"variableMana": false,
@@ -1123,6 +1225,7 @@
 	},
 	{
 		"nameString": "Salamander",
+		"spellID": "Salamander",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -1134,6 +1237,7 @@
 	},
 	{
 		"nameString": "Salvo",
+		"spellID": "Salvo",
 		"brand": "Shot",
 		"manaString": "3",
 		"variableMana": false,
@@ -1145,6 +1249,7 @@
 	},
 	{
 		"nameString": "Scatter Spear",
+		"spellID": "ScatterSpear",
 		"brand": "Utility",
 		"manaString": "1",
 		"variableMana": false,
@@ -1156,6 +1261,7 @@
 	},
 	{
 		"nameString": "Seize",
+		"spellID": "Seize",
 		"brand": "Strike",
 		"manaString": "3",
 		"variableMana": false,
@@ -1167,6 +1273,7 @@
 	},
 	{
 		"nameString": "Sentry Turret",
+		"spellID": "SummonTurretSentry",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -1178,6 +1285,7 @@
 	},
 	{
 		"nameString": "Shadow Shift",
+		"spellID": "ShadowShift",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -1189,6 +1297,7 @@
 	},
 	{
 		"nameString": "Shear",
+		"spellID": "Shear",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -1200,6 +1309,7 @@
 	},
 	{
 		"nameString": "Shield Throw",
+		"spellID": "ShieldThrow",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -1211,6 +1321,7 @@
 	},
 	{
 		"nameString": "Shotgun",
+		"spellID": "Shotgun",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -1222,6 +1333,7 @@
 	},
 	{
 		"nameString": "Skewer",
+		"spellID": "Skewer",
 		"brand": "Melee",
 		"manaString": "0",
 		"variableMana": false,
@@ -1233,6 +1345,7 @@
 	},
 	{
 		"nameString": "Slowball",
+		"spellID": "Slowball",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -1244,6 +1357,7 @@
 	},
 	{
 		"nameString": "Snow Cone",
+		"spellID": "SnowCone",
 		"brand": "Wave",
 		"manaString": "1",
 		"variableMana": false,
@@ -1255,6 +1369,7 @@
 	},
 	{
 		"nameString": "Snowfall",
+		"spellID": "Snowfall",
 		"brand": "Strike",
 		"manaString": "1",
 		"variableMana": false,
@@ -1266,6 +1381,7 @@
 	},
 	{
 		"nameString": "Spear Catch",
+		"spellID": "SpearCatch",
 		"brand": "Utility",
 		"manaString": "0",
 		"variableMana": false,
@@ -1277,6 +1393,7 @@
 	},
 	{
 		"nameString": "Spear Wave",
+		"spellID": "SpearWave",
 		"brand": "Shot",
 		"manaString": "3",
 		"variableMana": false,
@@ -1288,6 +1405,7 @@
 	},
 	{
 		"nameString": "Starfield",
+		"spellID": "Starfield",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -1299,6 +1417,7 @@
 	},
 	{
 		"nameString": "Step Blaze",
+		"spellID": "StepBlaze",
 		"brand": "Step",
 		"manaString": "1",
 		"variableMana": false,
@@ -1310,6 +1429,7 @@
 	},
 	{
 		"nameString": "Step Lance",
+		"spellID": "StepLance",
 		"brand": "Step",
 		"manaString": "2",
 		"variableMana": false,
@@ -1321,6 +1441,7 @@
 	},
 	{
 		"nameString": "Step Reverse",
+		"spellID": "StepReverse",
 		"brand": "Step",
 		"manaString": "1",
 		"variableMana": false,
@@ -1332,6 +1453,7 @@
 	},
 	{
 		"nameString": "Step Slash",
+		"spellID": "StepSlash",
 		"brand": "Step",
 		"manaString": "1",
 		"variableMana": false,
@@ -1343,6 +1465,7 @@
 	},
 	{
 		"nameString": "Stinger",
+		"spellID": "Stinger",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -1354,6 +1477,7 @@
 	},
 	{
 		"nameString": "Strangle",
+		"spellID": "Strangle",
 		"brand": "Missile",
 		"manaString": "2",
 		"variableMana": false,
@@ -1365,6 +1489,7 @@
 	},
 	{
 		"nameString": "Strip Mine",
+		"spellID": "StripMine",
 		"brand": "Missile",
 		"manaString": "2",
 		"variableMana": false,
@@ -1376,6 +1501,7 @@
 	},
 	{
 		"nameString": "Study",
+		"spellID": "Study",
 		"brand": "Utility",
 		"manaString": "0",
 		"variableMana": false,
@@ -1387,6 +1513,7 @@
 	},
 	{
 		"nameString": "Swallow Spear",
+		"spellID": "SwallowSpear",
 		"brand": "Utility",
 		"manaString": "1",
 		"variableMana": false,
@@ -1398,6 +1525,7 @@
 	},
 	{
 		"nameString": "Sweeper",
+		"spellID": "Sweeper",
 		"brand": "Missile",
 		"manaString": "3",
 		"variableMana": false,
@@ -1409,6 +1537,7 @@
 	},
 	{
 		"nameString": "Tailwind",
+		"spellID": "Tailwind",
 		"brand": "Shot",
 		"manaString": "0",
 		"variableMana": false,
@@ -1420,6 +1549,7 @@
 	},
 	{
 		"nameString": "Tetra",
+		"spellID": "Tetra",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -1431,6 +1561,7 @@
 	},
 	{
 		"nameString": "Thunder",
+		"spellID": "Thunder",
 		"brand": "Strike",
 		"manaString": "1",
 		"variableMana": false,
@@ -1442,6 +1573,7 @@
 	},
 	{
 		"nameString": "Toxicross",
+		"spellID": "Toxicross",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -1453,6 +1585,7 @@
 	},
 	{
 		"nameString": "Transmute",
+		"spellID": "Transmute",
 		"brand": "Wave",
 		"manaString": "2",
 		"variableMana": false,
@@ -1464,6 +1597,7 @@
 	},
 	{
 		"nameString": "Tremor",
+		"spellID": "Tremor",
 		"brand": "Wave",
 		"manaString": "1",
 		"variableMana": false,
@@ -1475,6 +1609,7 @@
 	},
 	{
 		"nameString": "Tri Thunder",
+		"spellID": "TriThunder",
 		"brand": "Strike",
 		"manaString": "2",
 		"variableMana": false,
@@ -1486,6 +1621,7 @@
 	},
 	{
 		"nameString": "Triple Barrel",
+		"spellID": "TripleBarrel",
 		"brand": "Shot",
 		"manaString": "2",
 		"variableMana": false,
@@ -1497,6 +1633,7 @@
 	},
 	{
 		"nameString": "Tsunami",
+		"spellID": "Tsunami",
 		"brand": "Wave",
 		"manaString": "3",
 		"variableMana": false,
@@ -1508,6 +1645,7 @@
 	},
 	{
 		"nameString": "Twinferno",
+		"spellID": "Twinferno",
 		"brand": "Strike",
 		"manaString": "3",
 		"variableMana": false,
@@ -1519,6 +1657,7 @@
 	},
 	{
 		"nameString": "Ultrangle",
+		"spellID": "Ultrangle",
 		"brand": "Missile",
 		"manaString": "3",
 		"variableMana": false,
@@ -1530,6 +1669,7 @@
 	},
 	{
 		"nameString": "Unleash",
+		"spellID": "Unleash",
 		"brand": "Shot",
 		"manaString": "X",
 		"variableMana": true,
@@ -1541,6 +1681,7 @@
 	},
 	{
 		"nameString": "Venoshock",
+		"spellID": "Venoshock",
 		"brand": "Laser",
 		"manaString": "2",
 		"variableMana": false,
@@ -1552,6 +1693,7 @@
 	},
 	{
 		"nameString": "Vine Pull",
+		"spellID": "VinePull",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -1563,6 +1705,7 @@
 	},
 	{
 		"nameString": "Vivisection",
+		"spellID": "Vivisection",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -1574,6 +1717,7 @@
 	},
 	{
 		"nameString": "Volley",
+		"spellID": "Volley",
 		"brand": "Shot",
 		"manaString": "1",
 		"variableMana": false,
@@ -1585,6 +1729,7 @@
 	},
 	{
 		"nameString": "Vortex",
+		"spellID": "Vortex",
 		"brand": "Missile",
 		"manaString": "2",
 		"variableMana": false,
@@ -1596,6 +1741,7 @@
 	},
 	{
 		"nameString": "Warp Rays",
+		"spellID": "WarpRays",
 		"brand": "Laser",
 		"manaString": "3",
 		"variableMana": false,
@@ -1607,6 +1753,7 @@
 	},
 	{
 		"nameString": "Whiplash",
+		"spellID": "Whiplash",
 		"brand": "Melee",
 		"manaString": "2",
 		"variableMana": false,
@@ -1618,6 +1765,7 @@
 	},
 	{
 		"nameString": "Whirl",
+		"spellID": "Whirl",
 		"brand": "Strike",
 		"manaString": "1",
 		"variableMana": false,
@@ -1629,6 +1777,7 @@
 	},
 	{
 		"nameString": "Wind Burst",
+		"spellID": "WindBurst",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,
@@ -1640,6 +1789,7 @@
 	},
 	{
 		"nameString": "Wrecking Ball",
+		"spellID": "WreckingBall",
 		"brand": "Missile",
 		"manaString": "0",
 		"variableMana": false,
@@ -1651,6 +1801,7 @@
 	},
 	{
 		"nameString": "Zenith",
+		"spellID": "Zenith",
 		"brand": "Missile",
 		"manaString": "1",
 		"variableMana": false,

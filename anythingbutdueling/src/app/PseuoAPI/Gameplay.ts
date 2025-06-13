@@ -19,7 +19,7 @@ type Cardtridge = {
 const EmptyCardtridge = {
     nameString: "",
     spellID: "Empty",
-    brand: "",
+    brand: "Default",
     manaString: "",
     variableMana: true,
     damageString: "",

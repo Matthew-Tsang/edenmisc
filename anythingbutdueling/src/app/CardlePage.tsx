@@ -1,13 +1,14 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
 import localFont from "next/font/local";
-import { Grid, Icon, IconButton, Tooltip } from "@mui/material";
+import { Box, Grid, Icon, IconButton, Tooltip } from "@mui/material";
 import { useEffect, useState } from "react";
 import CardleTutorial from "./CardleTutorial";
 import SpellSelect from "./SpellSelect";
 import GuessCounter from "./GuessCounter";
 import SpellCard from "./SpellCard";
 import { DailySpell, Guess, CompareSpell } from "./PseuoAPI/Gameplay";
+import CategoryIndex from "./CategoryIndex";
 
 const josefinSans = localFont({
     src: "../../public/fonts/JosefinSans-Regular.ttf",
@@ -23,6 +24,8 @@ const josefinSans = localFont({
 
 export default function CardlePage() {
     const [tutorialOpen, setTutorialOpen] = useState(false);
+    const [indexOpen, setIndexOpen] = useState(false);
+    const [indexPage, setIndexPage] = useState(true);
     const [guessCount, setGuessCount] = useState(0);
     const [dailySpell, setDailySpell] = useState("");
     const [currentSpell, setCurrentSpell] = useState(new Guess());
@@ -53,7 +56,7 @@ export default function CardlePage() {
             <CardleTutorial open={tutorialOpen} handleClose={setTutorialOpen} />
             <div className={`flex justify-end relative top-3 right-5`}>
                 <Tooltip title="Index">
-                    <IconButton aria-label="index" size="small">
+                    <IconButton aria-label="index" size="small" onClick={() => setIndexOpen(!indexOpen)}>
                         <Icon sx={{ fontSize: 40 }}>
                             <Image src="/tutorials-icon.png" alt="test" width={40} height={40} />
                         </Icon>
@@ -66,6 +69,9 @@ export default function CardlePage() {
                         </Icon>
                     </IconButton>
                 </Tooltip>
+                <Box sx={{ position: "absolute", top: "50px", right: "-15px", height: "150px", width: "24%" }}>
+                    <CategoryIndex open={indexOpen} page={indexPage} handlePage={setIndexPage} />
+                </Box>
             </div>
             <div className={`flex flex-row justify-center items-center relative top-11`}>
                 <Grid
@@ -83,18 +89,18 @@ export default function CardlePage() {
                         justifyContent: "center",
                     }}
                 >
-                    <div className={`text-4xl absolute top-6 ${josefinSans.className}`}>Cardle</div>
+                    <div className={`text-4xl relative bottom-2 ${josefinSans.className}`}>Cardle</div>
                 </Grid>
             </div>
-            <Grid container spacing={0} sx={{ marginTop: "70px" }}>
-                <Grid size={4.78} sx={{}}>
+            <Grid container spacing={0} sx={{ marginTop: "70px", position: "relative" }}>
+                <Grid size={7} sx={{}}>
                     <SpellCard correctSpell={dailySpell} currentSpell={currentSpell}></SpellCard>
                 </Grid>
-                <Grid size={3} sx={{}}></Grid>
-                <Grid size={2.62} sx={{ marginTop: "-125px" }}>
+                <Grid size={0.8} sx={{}}></Grid>
+                <Grid size={4.2} sx={{ marginTop: "-125px" }}>
                     <GuessCounter guessCount={guessCount} guessMax={5}></GuessCounter>
                     <Grid sx={{ marginTop: "51px" }}>
-                        <SpellSelect handleGuess={handleGuess}></SpellSelect>
+                        <SpellSelect disabled={guessCount >= 5} handleGuess={handleGuess}></SpellSelect>
                     </Grid>
                 </Grid>
                 <Grid size={1} sx={{}}></Grid>
