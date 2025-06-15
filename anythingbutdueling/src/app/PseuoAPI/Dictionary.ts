@@ -3,8 +3,19 @@ const Answer = {
     close: "#FCC44B",
     far: "#FFFFFF", // #E6E7E8
 };
-const maxEffects = 3;
-const maxTraits = 2;
+function HexAsEmote(hex: string): string {
+    switch (hex) {
+        case Answer.exact:
+            return "🟩";
+            break;
+        case Answer.close:
+            return "🟨";
+            break;
+        default:
+            return "⬛";
+            break;
+    }
+}
 
 const similarBrands = {
     Default: [""],
@@ -18,6 +29,7 @@ const similarBrands = {
     Utility: [""],
 };
 
+const maxEffects = 3;
 const similarEffects = [
     ["Poison", "Frost", "Root", "Mark", "Remove Status"],
     ["Push", "Pull", "Teleport", "Drag", "Lower", "Lift", "Knockback"],
@@ -26,10 +38,11 @@ const similarEffects = [
     //["Heal", "Shield", "Invincible"],
 ];
 
+const maxTraits = 2;
 const traitReadable = {
     halfhit: "half hits",
     subspell: "has a Secondary spell",
     multidamage: "has multiple damages",
 };
 
-export { Answer, maxEffects, maxTraits, similarBrands, similarEffects, traitReadable };
+export { Answer, HexAsEmote, maxEffects, maxTraits, similarBrands, similarEffects, traitReadable };

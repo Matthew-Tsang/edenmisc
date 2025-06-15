@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
 import localFont from "next/font/local";
-import { Box, Grid, Icon, IconButton, Tooltip } from "@mui/material";
+import { Box, Grid, Icon, IconButton, Tooltip, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import CardleTutorial from "./CardleTutorial";
 import SpellSelect from "./SpellSelect";
@@ -69,11 +69,11 @@ export default function CardlePage() {
                         </Icon>
                     </IconButton>
                 </Tooltip>
-                <Box sx={{ position: "absolute", top: "50px", right: "-15px", height: "150px", width: "24%" }}>
+                <Box sx={{ position: "absolute", top: "50px", right: "-15px", height: "150px", width: { xs: "39%", md: "32%", laptop: "32%", desktop: "24%" } }}>
                     <CategoryIndex open={indexOpen} page={indexPage} handlePage={setIndexPage} />
                 </Box>
             </div>
-            <div className={`flex flex-row justify-center items-center relative top-11`}>
+            {/* <div className={`flex flex-row justify-center items-center relative top-11`}>
                 <Grid
                     container
                     sx={{
@@ -91,19 +91,37 @@ export default function CardlePage() {
                 >
                     <div className={`text-4xl relative bottom-2 ${josefinSans.className}`}>Cardle</div>
                 </Grid>
-            </div>
+            </div> */}
+            <Box position="relative" sx={{ width: "100%", height: "102px", zIndex: "-1" }}>
+                <Box position="absolute" sx={{ width: "clamp(0px, 55vw, 370px)", height: "102px", top: "45%", left: { xs: "5%", tablet: "9%", laptop: "calc(50% - clamp(0px, 55vw, 370px)*0.5)" } }}>
+                    <Image src="/in game button icon.png" alt="Cardle title" height={102} width={370}></Image>
+                </Box>
+                <Box
+                    position="absolute"
+                    sx={{
+                        width: "clamp(0px, 55vw, 370px)",
+                        height: "12vw",
+                        maxHeight: "82px",
+                        top: "50%",
+                        left: { xs: "5%", tablet: "9%", laptop: "calc(50% - clamp(0px, 55vw, 370px)*0.5)" },
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <Typography sx={{ fontSize: "clamp(0px, 7vw, 50px)", fontFamily: "JosefinSans" }}>Cardle</Typography>
+                </Box>
+            </Box>
             <Grid container spacing={0} sx={{ marginTop: "70px", position: "relative" }}>
-                <Grid size={7} sx={{}}>
+                <Grid size={{ sm: 12, laptop: 7.8, desktop: 7.8 }} sx={{}}>
                     <SpellCard correctSpell={dailySpell} currentSpell={currentSpell}></SpellCard>
                 </Grid>
-                <Grid size={0.8} sx={{}}></Grid>
-                <Grid size={4.2} sx={{ marginTop: "-125px" }}>
+                <Grid minHeight={100} size={{ xs: 12, desktop: 4.2 }} sx={{ paddingLeft: { xs: "10%", md: "20%", laptop: "25%", desktop: "0%" }, marginLeft: { xs: "0px" }, marginTop: { xs: "50px", desktop: "-123px" } }}>
                     <GuessCounter guessCount={guessCount} guessMax={5}></GuessCounter>
-                    <Grid sx={{ marginTop: "51px" }}>
+                    <Grid sx={{ marginLeft: { xs: "200px", desktop: "0px" }, marginTop: { xs: "-75px", desktop: "51px" } }}>
                         <SpellSelect disabled={guessCount >= 5} handleGuess={handleGuess}></SpellSelect>
                     </Grid>
                 </Grid>
-                <Grid size={1} sx={{}}></Grid>
             </Grid>
         </div>
     );

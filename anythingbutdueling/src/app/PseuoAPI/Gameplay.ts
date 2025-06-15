@@ -1,7 +1,7 @@
 import CARDS from "./Cardle.json";
 import pseudo from "./Pseudo.json";
 import "./Dictionary";
-import { Answer, maxEffects, maxTraits, similarBrands, similarEffects, traitReadable } from "./Dictionary";
+import { Answer, HexAsEmote, maxEffects, maxTraits, similarBrands, similarEffects, traitReadable } from "./Dictionary";
 
 type Cardtridge = {
     nameString: string;
@@ -212,4 +212,21 @@ function GuessEffect(c: Cardtridge, e: string): string {
     }
 
     return Answer.far;
+}
+
+function DayIndex(): number {
+    let startDate: number = 1749929216;
+    // June 14 2025 | unix epoch in seconds
+    let secondsSince = Math.floor(Date.now() / 1000) - startDate;
+    let daysSince = Math.floor(secondsSince / (3600 * 24));
+    return daysSince + 1;
+    // day 0 is the 1st cardle
+}
+export function ConvertGuessToMessage(correct: string, guesses: Guess[], max: number) {
+    let message: string = "Cardle #" + DayIndex() + "  " + guesses.length + "/" + max + "\n";
+    guesses.forEach((guess) => {
+        message += "\n" + (guess.name == correct ? HexAsEmote(Answer.exact) : HexAsEmote(Answer.far)) + "  " + HexAsEmote(guess.mana.hex) + HexAsEmote(guess.damage.hex) + HexAsEmote(guess.brand.hex) + HexAsEmote(guess.fullEffectsCol);
+    });
+
+    return message;
 }

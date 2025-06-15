@@ -13,13 +13,15 @@ const StyledAutocomplete = styled(Autocomplete)({
         // Default transform is "translate(14px, 20px) scale(1)""
         // This lines up the label with the initial cursor position in the input
         // after changing its padding-left.
-        transform: "translate(29px, 20px) scale(1);",
         color: "white",
         fontFamily: "UbuntuRegular",
         fontStyle: "italic",
         overflow: "visible",
-        fontSize: "45px",
-        marginTop: "-18px",
+        fontSize: "2.9rem",
+        marginTop: "-4%",
+        paddingBottom: "5%",
+        marginLeft: "clamp(0rem, max(0.8rem, 1%), 0.8rem)",
+        paddingRight: "5%",
         opacity: "0.7",
     },
     ".MuiInputLabel-outlined": {
@@ -87,7 +89,7 @@ export default function SpellSelect(props: { disabled: boolean; handleGuess: (na
     };
 
     return (
-        <Grid container spacing={1}>
+        <Grid container spacing={1} sx={{}}>
             {/*@ts-expect-error for some reason it's not expecting an argument even tho it takes it*/}
             <StyledAutocomplete<string>
                 disabled={props.disabled}
@@ -169,6 +171,18 @@ export default function SpellSelect(props: { disabled: boolean; handleGuess: (na
                             borderWidth: "4.5px",
                             borderColor: "rgb(254, 50, 102)",
                         },
+                    },
+                    popper: {
+                        modifiers: [
+                            {
+                                name: "flip",
+                                enabled: false,
+                            },
+                            {
+                                name: "preventOverflow",
+                                enabled: false,
+                            },
+                        ],
                     },
                 }}
             />
