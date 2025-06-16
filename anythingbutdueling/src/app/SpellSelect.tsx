@@ -115,7 +115,7 @@ export default function SpellSelect(props: { disabled: boolean; handleGuess: (na
                 }}
                 filterOptions={(options: string[], state: FilterOptionsState<string>) => {
                     if (state.inputValue.length > 0) {
-                        return matchSorter(options, state.inputValue).slice(0, 10);
+                        return matchSorter(options, state.inputValue).slice(0, 9);
                     } else return [];
                 }}
                 onKeyDown={(event) => {
